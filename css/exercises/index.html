@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: inline-block;
+        position: relative;
+      }
+      input {
+        outline: none;
+        padding: 4px 6px;
+        border: 1px solid rgb(134, 134, 178);
+        transition: 0.4s;
+        padding-left: 20px;
+      }
+      input:focus + img {
+        /* display: none; */
+        /* border-color: rgb(3, 3, 101); */
+      }
+      input:hover {
+        border-color: rgb(85, 85, 172);
+      }
+      div img {
+        width: 12.5px;
+        height: 12.5px;
+        position: absolute;
+        left: 6px;
+        top: 6px;
+      }
+      textarea {
+        /* min-height: 200px; */
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" name="" id="" placeholder="Test" />
+      <img src="./icons/user.svg" />
+    </div>
+    <textarea placeholder="Type Anything"></textarea>
+  </body>
+</html>
