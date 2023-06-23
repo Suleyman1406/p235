@@ -1,0 +1,335 @@
+/* html {
+  font-family: "Cardo", serif;
+} */
+
+/* @font-face {
+  font-family: "Cardo";
+  font-weight: 500;
+  src: local("Cardo"), local("Cardo-Regular"), url("./fonts/Cardo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cardo";
+  font-weight: 500;
+  font-style: italic;
+  src: url("./fonts/Cardo-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cardo";
+  font-weight: 700;
+  src: url("./fonts/Cardo-Bold.ttf") format("truetype");
+} */
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cardo", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#header_section {
+  background: #1b3764;
+}
+
+#header_section nav {
+  padding-top: 42.5px;
+  display: flex;
+  align-items: center;
+}
+
+#header_section nav > a:first-child {
+  color: #fff;
+  font-size: 28px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 125%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 6.75px;
+}
+
+.container {
+  width: 1300px;
+  margin: auto;
+}
+#header_section .social_media_nav {
+  display: flex;
+  column-gap: 10px;
+  margin-left: 33px;
+}
+#header_section .social_media_nav div {
+  background-color: white;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#header_section .social_media_nav div:hover {
+  border: 1px solid white;
+  background-color: #1b3764;
+}
+
+#header_section .social_media_nav div:hover svg {
+  fill: white;
+}
+
+#header_section .content_nav {
+  display: flex;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: -0.17px;
+  margin-left: auto;
+  column-gap: 42px;
+}
+
+#header_section .content_nav a {
+  color: white;
+}
+
+#header_section .cart_img {
+  margin-left: 26px;
+}
+
+.order_today_btn {
+  padding: 13px 33px;
+  background: #ffca42;
+  margin-left: 30px;
+  color: #1b3764;
+  text-align: center;
+  font-size: 19px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.38px;
+  transition: 0.4s;
+  border: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.order_today_btn:hover {
+  color: #ffca42;
+  background: #1b3764;
+  border-color: #ffca42;
+}
+
+#landing_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 95px;
+}
+
+#landing_section > div:first-child {
+  width: 614px;
+}
+
+#landing_section > div:first-child p {
+  color: #b4c7e7;
+  font-size: 19px;
+  font-family: Inter;
+  line-height: 180%;
+  letter-spacing: -0.19px;
+}
+
+#landing_section > div:first-child h1 {
+  color: #fff;
+  font-size: 65px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -1.3px;
+  margin: 16px 0 32px;
+}
+
+#landing_section > div:first-child h4 {
+  color: #fff;
+  font-size: 24px;
+  font-family: Cardo;
+  font-style: italic;
+  line-height: 154.5%;
+  letter-spacing: -0.48px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+#landing_section > div:first-child .button_container button {
+  margin-left: 0;
+}
+#landing_section > div:first-child .button_container {
+  margin: 49px 0px;
+  display: flex;
+  align-items: center;
+  column-gap: 37px;
+}
+#landing_section > div:first-child .button_container a {
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.38px;
+  border-bottom: 1px solid white;
+  padding: 0px 5px 3px;
+}
+
+#landing_section .info_container {
+  display: flex;
+  column-gap: 80px;
+}
+#landing_section .info_container .info {
+  display: flex;
+  column-gap: 13px;
+}
+
+#landing_section .info_container .info .yellow_point {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #ffca42;
+  margin-top: 6px;
+}
+
+#landing_section .info_container .info > div:last-child h5 {
+  color: #fff;
+  font-size: 24px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+  margin-bottom: 3px;
+}
+#landing_section .info_container .info > div:last-child h6 {
+  color: #b4c7e7;
+  font-size: 18px;
+  font-family: Inter;
+  line-height: 170%;
+  letter-spacing: -0.18px;
+}
+
+#landing_section > div:last-child {
+  width: 592px;
+  height: 800px;
+  border: 12px solid #dbe1e9;
+  background: #fff;
+  padding: 35px 41px;
+}
+
+#landing_section > div:last-child img {
+  margin: auto;
+}
+#landing_section > div:last-child p {
+  color: #1b3764;
+  text-align: center;
+  font-size: 18px;
+  font-family: Cardo;
+  font-style: italic;
+  line-height: 160%;
+  letter-spacing: -0.18px;
+  margin-top: 3px;
+}
+
+#landing_section > div:last-child .star_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 17.72px;
+  margin-top: 25px;
+}
+#landing_section > div:last-child .star_container .star {
+  color: #1b3764;
+  text-align: center;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 200%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#landing_section > div:last-child .star_container .line {
+  width: 38.239px;
+  height: 2px;
+  background: #1b3764;
+  transform: translateY(-3.5px);
+}
+#landing_section > div:last-child .lamp_majority_container {
+  height: 328px;
+  margin-top: 24px;
+  position: relative;
+}
+#landing_section > div:last-child .lamp_majority_container .majority {
+  position: absolute;
+  right: 32px;
+  top: -52px;
+  width: 163px;
+  height: 163px;
+  border-radius: 163px;
+  border: 9px solid rgb(237, 217, 166);
+  background: rgb(255, 202, 66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing_section > div:last-child .lamp_majority_container .majority h4 {
+  color: #1b3764;
+  font-size: 20px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 125%;
+}
+#landing_section > div:last-child .lamp_majority_container .majority p {
+  width: 120px;
+  color: #1b3764;
+  font-size: 14px;
+  font-family: Cardo;
+  font-style: italic;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+}
+#landing_section > div:last-child .lamp_majority_container img {
+  margin-left: 33px;
+}
+
+#landing_section > div:last-child .author_container {
+  text-align: center;
+  margin-top: 19px;
+}
+
+#landing_section > div:last-child .author_container h3 {
+  color: #1b3764;
+  font-size: 25px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 125%;
+}
+#landing_section > div:last-child .author_container p {
+  color: #1b3764;
+  font-size: 16px;
+  font-family: Cardo;
+  font-style: italic;
+  line-height: 170%;
+  letter-spacing: -0.16px;
+}
