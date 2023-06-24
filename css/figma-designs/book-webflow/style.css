@@ -42,6 +42,7 @@ h6 {
 
 #header_section {
   background: #1b3764;
+  padding-bottom: 115px;
 }
 
 #header_section nav {
@@ -193,16 +194,16 @@ h6 {
   padding: 0px 5px 3px;
 }
 
-#landing_section .info_container {
+.info_container {
   display: flex;
   column-gap: 80px;
 }
-#landing_section .info_container .info {
+.info_container .info {
   display: flex;
   column-gap: 13px;
 }
 
-#landing_section .info_container .info .yellow_point {
+.info_container .info .yellow_point {
   width: 16px;
   height: 16px;
   border-radius: 16px;
@@ -210,7 +211,7 @@ h6 {
   margin-top: 6px;
 }
 
-#landing_section .info_container .info > div:last-child h5 {
+.info_container .info > div:last-child h5 {
   color: #fff;
   font-size: 24px;
   font-family: Cardo;
@@ -219,7 +220,7 @@ h6 {
   letter-spacing: -0.24px;
   margin-bottom: 3px;
 }
-#landing_section .info_container .info > div:last-child h6 {
+.info_container .info > div:last-child h6 {
   color: #b4c7e7;
   font-size: 18px;
   font-family: Inter;
@@ -332,4 +333,113 @@ h6 {
   font-style: italic;
   line-height: 170%;
   letter-spacing: -0.16px;
+}
+
+#author_books_section {
+  padding: 145px 0;
+  background-color: white;
+  text-align: center;
+}
+#author_books_section > div h2 {
+  color: #1b3764;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.9px;
+}
+#author_books_section > div > span:nth-child(2) {
+  display: inline-block;
+  width: 55px;
+  height: 3px;
+  background: #ffca42;
+  margin-top: 22px;
+}
+
+#author_books_section > div > .books {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  margin-top: 57px;
+}
+#author_books_section > div > .books > .book {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+#author_books_section > div > .books > .book > div {
+  width: 281px;
+}
+#author_books_section > div > .books > .book > img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#author_books_section > div > .books > .book > div > h3 {
+  color: #1b3764;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+}
+#author_books_section > div > .books > .book > div > p {
+  margin: 14px 0 30px;
+  width: 262px;
+  color: #969aa0;
+  font-size: 19px;
+  font-family: Inter;
+  line-height: 180%;
+  letter-spacing: -0.19px;
+}
+
+#author_books_section
+  > div
+  > .books
+  > .book
+  > div
+  > .info_container
+  > .info
+  > div:last-child
+  > h5 {
+  color: #1b3764;
+}
+#author_books_section > div > .books > .book > div > .info_container {
+  column-gap: 48px;
+}
+#author_books_section
+  > div
+  > .books
+  > .book
+  > div
+  > .info_container
+  > .info
+  > div:last-child
+  > h6 {
+  color: #969aa0;
+  font-size: 18px;
+  font-family: Inter;
+  line-height: 170%;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+}
+
+#author_books_section > div > .books > .book > div > button {
+  padding: 20px 53px;
+  margin-top: 30px;
+  border: 1px solid #ffca42;
+  background-color: transparent;
+  color: #1b3764;
+  font-size: 19px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 125%;
+  cursor: pointer;
+  letter-spacing: 0.38px;
+  transition: 0.4s;
+}
+
+#author_books_section > div > .books > .book > div > button:hover {
+  background-color: #ffca42;
+  color: white;
 }

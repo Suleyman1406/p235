@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 100px;
+      }
+      .dropdown {
+        width: 100px;
+      }
+      .dropdown > span {
+        display: inline-block;
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+        background-color: blue;
+        color: white;
+      }
+      .dropdown .options {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .dropdown .options span {
+        padding: 5px 8px;
+        border-bottom: 0.5px solid rgba(121, 121, 121, 0.4);
+        transition: 0.15s;
+        cursor: pointer;
+      }
+      .dropdown .options span:hover {
+        background-color: rgba(121, 121, 121, 0.2);
+      }
+      .dropdown:hover .options {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span>Pages</span>
+      <div class="options">
+        <span>Pages1</span>
+        <span>Pages2</span>
+        <span>Pages3</span>
+      </div>
+    </div>
+  </body>
+</html>
