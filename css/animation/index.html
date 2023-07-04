@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* padding: 100px; */
+      }
+      /* 
+      @keyframes goRight {
+        from {
+          left: 100px;
+        }
+        to {
+          left: 500px;
+        }
+      } */
+
+      /* @keyframes goRight {
+        0% {
+          left: 100px;
+        }
+        50% {
+          left: 500px;
+        }
+        100% {
+          left: 100px;
+        }
+      } */
+
+      /* div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        animation-name: goRight;
+        animation-duration: 5s;
+        animation-delay: 4s;
+
+        animation-iteration-count: infinite;
+      } */
+
+      /* @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(180deg);
+        }
+      } */
+
+      /* .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px dotted green;
+        border-radius: 50%;
+        animation: spin 0.7s infinite;
+      } */
+
+      @keyframes run {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(800px);
+        }
+      }
+
+      .horse {
+        width: 75px;
+        height: 75px;
+        background-color: aquamarine;
+        margin: 40px;
+        animation-name: run;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-direction: reverse;
+      }
+
+      /* .horse:first-child {
+        animation-timing-function: ease;
+      }
+
+      .horse:nth-child(2) {
+        animation-timing-function: linear;
+      }
+      .horse:nth-child(3) {
+        animation-timing-function: ease-in;
+      }
+      .horse:nth-child(4) {
+        animation-timing-function: ease-out;
+      }
+      .horse:nth-child(5) {
+        animation-timing-function: ease-in-out;
+      }
+      .horse:nth-child(6) {
+        animation-timing-function: cubic-bezier(1, -0.04, 0, 0.99);
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div></div> -->
+    <!-- <div class="spinner"></div> -->
+    <div class="horse"></div>
+    <div class="horse"></div>
+    <div class="horse"></div>
+    <div class="horse"></div>
+    <div class="horse"></div>
+    <div class="horse"></div>
+  </body>
+</html>
