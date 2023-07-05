@@ -1,0 +1,118 @@
+/* Variables */
+
+// $primary-color: red;
+$primary-border: 1px solid black;
+
+// body {
+//   font-size: 16px;
+//   background-position: top;
+// }
+
+// body > div {
+//   background-color: $primary-color;
+// }
+
+// div > p > span {
+//   background-color: $primary-color;
+//   color: white;
+// }
+
+// div > span > a {
+//   color: $primary-color;
+// }
+
+/* Nesting */
+// .landing_section {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .landing_section .left_side {
+//   background-color: red;
+//   width: 200px;
+//   font-size: 30px;
+// }
+// .landing_section .left_side h3 {
+// }
+
+// .landing_section > div {
+// }
+
+// .landing_section > button:hover{
+
+// }
+
+// .landing_section {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   // >button:hover{
+
+//   // }
+//   > button {
+//     background-color: transparent;
+//     border: $primary-border;
+
+//     &:hover {
+//       background-color: red;
+//     }
+//   }
+
+//   > div {
+//     background-position: top;
+//   }
+//   .left_side {
+//     background-color: red;
+//     width: 200px;
+//     font-size: 30px;
+
+//     h3 {
+//       color: green;
+//     }
+//   }
+// }
+
+/* Inheritance */
+
+// .default-btn {
+//   text-align: center;
+//   font-family: Inter;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: 22px;
+//   border-radius: 6px;
+// }
+
+// .primary-btn {
+//   @extend .default-btn;
+//   background-color: blue;
+//   color: white;
+// }
+
+// .secondary-btn {
+//   @extend .default-btn;
+//   background-color: white;
+//   color: blue;
+// }
+
+@mixin headingText1($heading-color, $hasBorder: true) {
+  color: $heading-color;
+  font-size: 15px - 12px;
+  width: calc(100% + 90px);
+  line-height: 24px;
+  font-weight: 700;
+  @if $hasBorder {
+    border: 1px solid red;
+  } @else {
+    border: none;
+  }
+}
+
+div > h1 {
+  @include headingText1($hasBorder: false, $heading-color: green);
+}
+
+span > h1 {
+  @include headingText1(green);
+}
