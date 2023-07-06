@@ -1,0 +1,33 @@
+@mixin button($backgroundColor, $textColor, $padding, $height) {
+  border-radius: 20px;
+  background-color: $backgroundColor;
+  color: $textColor;
+  padding: $padding;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  height: $height;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@mixin for-type($type) {
+  @if $type == mobile {
+    @media (max-width: $mobile-breakpoint) {
+      @content;
+    }
+  } @else if $type==tablet {
+    @media (max-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+}

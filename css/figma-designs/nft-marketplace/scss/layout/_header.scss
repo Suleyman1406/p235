@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+
+  img:last-child {
+    display: none;
+  }
+  .right-side {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 140%;
+      font-style: normal;
+      padding: 0 20px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    button {
+      @include button($call-to-action, white, 0 30px, 60px);
+    }
+  }
+}
+
+@include for-type(tablet) {
+  .navbar {
+    padding: 15px 50px;
+    img:first-child {
+      width: 183px;
+      height: 24px;
+    }
+    .right-side {
+      display: none;
+    }
+    img:last-child {
+      display: initial;
+    }
+  }
+}
+
+@include for-type(mobile) {
+  .navbar {
+    padding: 15px 30px;
+  }
+}
