@@ -1,0 +1,127 @@
+footer {
+  background-color: $background-secondary-color;
+  padding: 40px 20px;
+
+  .footer-info {
+    width: 987px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .info-first {
+      p {
+        width: 238px;
+        margin-top: 30px;
+        color: #ccc;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+    .info-second {
+      h4 {
+        color: #fff;
+        font-family: Space Mono;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+      }
+      a {
+        display: block;
+        margin-top: 25px;
+        color: #ccc;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-decoration: none;
+      }
+    }
+
+    .info-third {
+      width: 420px;
+      h4 {
+        color: #fff;
+        font-family: Space Mono;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: capitalize;
+      }
+      p {
+        width: 330px;
+        color: #ccc;
+
+        /* Base(Body) - Work Sans */
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 25px 0 20px;
+      }
+
+      .input-container {
+        width: 100%;
+        position: relative;
+
+        input {
+          width: 100%;
+          padding: 19px 20px;
+          border-radius: 20px;
+          color: $background-primary-color;
+          font-family: Work Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          border: none;
+          outline: none;
+          padding-right: 190px;
+        }
+        button {
+          @include button($call-to-action, white, 0 50px, 60px);
+          position: absolute;
+          right: 0;
+          top: 0;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  @include for-type(tablet) {
+    .footer-info {
+      width: 690px;
+      flex-direction: column;
+
+      .info-second,
+      .info-third {
+        margin-top: 30px;
+      }
+    }
+  }
+  @include for-type(mobile) {
+    margin-top: 30px;
+    .footer-info {
+      width: 315px;
+      .info-third {
+        width: 100%;
+
+        .input-container {
+          button {
+            position: initial;
+            margin-top: 16px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
