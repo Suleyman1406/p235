@@ -49,15 +49,98 @@
 //   console.log("Hello world 2");
 // }
 
-
 // let printHello3 = () => {
 //   console.log("Print Hello 3");
 // }
 
 // printHello3();
 
-let sum = (a,b)=>{
-  return a+b;
-}
+// let sum = (a,b)=>{
+//   return a+b;
+// }
 
-console.log(sum(2,3));
+// console.log(sum(2,3));
+// console.log("trial");
+
+// function sayHello() {
+//   console.log("Hello");
+// }
+
+// function test() {
+//   console.log("test");
+// }
+// // sayHello();
+
+// function any(anyFunction) {
+//   console.log("birseyler");
+//   anyFunction();
+// }
+
+// any(sayHello);
+// any(test);
+
+// let sum = (a, b) => {
+//   return a + b;
+// };
+
+// let multiply = (a, b) => {
+//   return a * b;
+// };
+// let subtract = (a, b) => {
+//   return a - b;
+// };
+// console.log("Start");
+// let doOperationAndPrint = (a, b, operation) => {
+//   console.log(operation(a, b));
+// };
+// doOperationAndPrint(6, 3, (a, b) => {
+//   let c = a + b;
+//   return c;
+// });
+// doOperationAndPrint(5, 3, subtract);
+// doOperationAndPrint(3, 9, multiply);
+
+// let a = [5, 2, 9, 1, 3, 4];
+
+// a.sort((a, b) => a - b);
+// a.sort((a, b) => {
+//   return a - b;
+// });
+
+// a.sort(function (a, b) {
+//   return a - b;
+// });
+
+// let compare = (a, b) => {
+//   return a - b;
+// };
+
+// a.sort(compare);
+
+// function compareFn(a, b) {
+//   return a - b;
+// }
+
+// a.sort(compareFn);
+
+// function any(){
+
+// }
+
+// let ab = function(){
+
+// }
+
+// let abc = ()=>{
+
+// }
+
+let a = [5, 2, 9, 1, 3, 4];
+
+a.sort((a, b) => {
+  if (a > b) return 1;
+  else if (b > a) return -1;
+  else return 0;
+});
+
+console.log(a);
