@@ -135,12 +135,12 @@
 
 // }
 
-let a = [5, 2, 9, 1, 3, 4];
+// let a = [5, 2, 9, 1, 3, 4];
 
-a.sort((a, b) => {
-  if (a > b) return 1;
-  else if (b > a) return -1;
-  else return 0;
-});
+// a.sort((a, b) => {
+//   if (a > b) return 1;
+//   else if (b > a) return -1;
+//   else return 0;
+// });
 
-console.log(a);
+// console.log(a);
