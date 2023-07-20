@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      button {
+        margin: 50px;
+      }
+      .modal-container {
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(120, 120, 120, 0.129);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        position: relative;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      .modal button {
+        position: absolute;
+        right: -20px;
+        top: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Open Modal</button>
+    <div class="modal-container">
+      <div class="modal">
+        <h1>Hello my First Modal</h1>
+        <button>X</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

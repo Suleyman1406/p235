@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 100px;
+      }
+      .select_container {
+        width: 200px;
+        position: relative;
+      }
+      input {
+        width: 100%;
+        padding: 6px 10px;
+        outline: none;
+        border: 1px solid rgb(85, 154, 227);
+      }
+      input:focus {
+        border-color: blue;
+      }
+
+      .select_dropdown {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+        display: none;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5px;
+      }
+      .select_dropdown p {
+        padding: 5px 10px;
+        transition: 0.1s;
+        border-bottom: 1px solid rgb(223, 223, 223);
+        cursor: pointer;
+      }
+      .select_dropdown p:hover {
+        background-color: rgb(223, 223, 223);
+      }
+
+      .select_dropdown::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      /* Track */
+      .select_dropdown::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 5px;
+      }
+
+      /* Handle */
+      .select_dropdown::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+        cursor: pointer!important;
+
+      }
+      /* Handle on hover */
+      .select_dropdown::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- bodynin icinde
+    <div>
+      divin icinde
+      <p>
+        pnin icinde
+        <span>span</span>
+      </p>
+    </div> -->
+    <div class="select_container">
+      <input type="text" placeholder="Type and select..." />
+      <div class="select_dropdown">
+        <p>Alma</p>
+        <p>Armud</p>
+        <p>Heyva</p>
+        <p>Nar</p>
+        <p>Badam</p>
+        <p>Gilas</p>
+        <p>Visne</p>
+        <p>Banan</p>
+        <p>Qarpiz</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
