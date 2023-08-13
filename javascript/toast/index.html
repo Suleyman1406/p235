@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        background-color: bisque;
+      }
+      .toast-container {
+        position: absolute;
+        right: 20px;
+      }
+      .toast {
+        width: 200px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10px;
+      }
+
+      .toast-success {
+        background-color: green;
+        color: white;
+      }
+
+      .toast-error {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Test</button>
+    <div class="toast-container"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

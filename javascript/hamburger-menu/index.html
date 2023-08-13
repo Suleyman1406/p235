@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(165, 190, 233);
+        padding: 20px 40px;
+      }
+      .navbar > button {
+        display: none;
+      }
+
+      @media only screen and (max-width: 968px) {
+        .navbar > div {
+          display: none;
+        }
+        .navbar > button {
+          display: initial;
+        }
+      }
+      .hamburger-menu {
+        position: absolute;
+        top: -150px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: bisque;
+        transition: 0.5s;
+      }
+      .hamburger-menu .close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Dada</h1>
+      <button>M</button>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <button class="close">X</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
